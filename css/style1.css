@@ -1,0 +1,251 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Dancing Script", cursive;
+  font-family: "Open Sans Condensed", sans-serif;
+  background: url(bp2.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.ltext {
+  font-size: 20px;
+  color: white;
+}
+
+.tlogin{
+  font-size: 15px;
+  color: white;
+
+}
+
+/*loginbox*/
+
+.loginbox {
+  width: 320px;
+  height: 420px;
+  background: black;
+  color-adjust: #fff;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  box-sizing: border-box;
+  padding: 70px 30px;
+}
+
+.loginbox .form-control{
+  border-radius: 30px;
+}
+
+.avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  position: absolute;
+  top: -50px;
+  left: calc(50% - 50px);
+}
+
+:root {
+  --main-color: red;
+  /* --black: #ebebeb; */
+}
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: all 0.2s linear;
+  transition: width none;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 7rem;
+}
+
+html::-webkit-scrollbar {
+  width: 1rem;
+}
+
+html::-webkit-scrollbar-track {
+  background: var(--black);
+}
+
+html::-webkit-scrollbar-thumb {
+  background: var(--main-color);
+}
+
+body {
+  overflow-x: hidden;
+  background: var(--black);
+}
+
+section {
+  padding: 2rem 9%;
+}
+
+.heading {
+  font-size: 4rem;
+  text-align: center;
+  padding-bottom: 2rem;
+  color: var(--main-color);
+}
+
+.heading span {
+  color: white;
+}
+
+.btn {
+  margin-top: 1rem;
+  display: inline-block;
+  padding: 0.8rem 3rem;
+  font-size: 1.7rem;
+  /* background: rgb(114, 165, 46); */
+  font-weight: 500;
+  background: white;
+  color: var(--black);
+  transition: 0.5s;
+  cursor: pointer;
+  border-radius: 30px;
+  
+  
+}
+
+
+.btn-primary{
+
+  background-color: white;
+}
+
+.btn:hover {
+  background: var(--main-color);
+  color: white;
+  /* letter-spacing: 0.3rem; */
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background: rgba(0, 0, 0, 0.3);
+  padding: 3rem 9%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header .logo i {
+  padding-right: 0.5rem;
+  /*animation: floating 2s linear infinite;*/
+}
+
+/*@keyframes floating {
+  0%,
+  100% {
+    transform: translateY(0rem);
+  }
+
+  50% {
+    transform: translateY(-1rem);
+  }
+}*/
+
+.header .navbar a {
+  font-size: 1.7rem;
+  color: white;
+  margin: 0 1.5rem;
+}
+
+.header .navbar a.active,
+.header .navbar a:hover {
+  color: var(--main-color);
+}
+
+.header .icons a,
+.header .icons div {
+  font-size: 2.5rem;
+  color: white;
+  margin-left: 2rem;
+  cursor: pointer;
+}
+
+.header .icons a:hover,
+.header .icons div:hover {
+  color: grey;
+}
+
+#menu-btn {
+  display: none;
+}
+
+.header.active {
+  padding: 2rem 9%;
+  background: #222;
+}
+
+section {
+  padding: 2rem;
+}
+
+.footer {
+  background: #000;
+}
+
+.footer .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 1.5rem;
+}
+
+.footer .box-container .box h3 {
+  font-size: 2.2rem;
+  color: #fff;
+  padding: 1rem 0;
+}
+
+.footer .box-container .box a {
+  font-size: 1.4rem;
+  color: #aaa;
+  padding: 1rem 0;
+  display: block;
+}
+
+.footer .box-container .box a:hover {
+  color: var(--main-color);
+}
+
+.footer .box-container .box a i {
+  padding-right: 0.5rem;
+  color: var(--main-color);
+}
+
+.footer .box-container .box a:hover i {
+  padding-right: 2rem;
+  color: #fff;
+}
+
+.footer .credit {
+  padding: 1rem;
+  padding-top: 2.5rem;
+  margin-top: 2.5rem;
+  border-top: 0.1rem solid #fff3;
+  font-size: 2rem;
+  color: #aaa;
+  text-align: center;
+}
+
+.footer .credit span {
+  color: var(--main-color);
+}
